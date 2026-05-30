@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "^6.15.4",
     "aws-amplify": "^6.17.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@aws-amplify/backend": "^1.23.0",
     "@aws-amplify/backend-cli": "^1.8.3",
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@eslint/js": "^10.0.1",
     "@types/node": "^24.12.3",
     "@types/react": "^19.2.14",
@@ -32,6 +34,10 @@
     "tsx": "^4.22.3",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.59.2",
-    "vite": "^8.0.12"
+    "vite": "^8.0.12",
+    "vite-plugin-node-polyfills": "^0.28.0"
+  },
+  "overrides": {
+    "react-error-overlay": "6.0.9"
   }
 }
